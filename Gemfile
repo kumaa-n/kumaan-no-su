@@ -56,3 +56,4 @@ end
 gem "tailwindcss-rails"
 gem "tailwindcss-ruby"
 gem "inline_svg"
+gem "rails-i18n"
