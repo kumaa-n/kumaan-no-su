@@ -1,24 +1,15 @@
-# README
+# くまーんの巣 🐻🏡
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+くまーんの巣は、くまーんが日々のつぶやきや気になることを自由に発信するブログです。<br>
+シンプルで落ち着いたデザインと、ゆるやかな更新を大切にしています。
 
-Things you may want to cover:
+## 🌐 サイトURL
 
-* Ruby version
+https://shrill-eda-kumaa-n-68bfad52.koyeb.app
 
-* System dependencies
+## 🛠 技術スタック
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- フロントエンド：Tailwind CSS, daisyUI
+- バックエンド：Ruby on Rails 7
+- インフラ：Docker, Koyeb（デプロイ）
+- データベース：未使用
