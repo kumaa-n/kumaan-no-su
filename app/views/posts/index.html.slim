@@ -1,0 +1,17 @@
+main.flex-1.p-5.md:p-8
+  .grid.grid-cols-1.gap-5.sm:grid-cols-2.md:grid-cols-3.lg:grid-cols-4
+    - @posts.each do |post|
+      .card.card-border.bg-base-100.w-full
+        .card-body
+          h2.card-title.border-b.pb-1
+            = post[:title]
+          p
+            = post[:summary]
+
+          .mt-2.flex.items-center.gap-2
+            = inline_svg_tag("calendar.svg", class: "fill-current")
+            time datetime=post[:date]
+              = post[:date_hyphen]
+
+          .card-actions.justify-end
+            = link_to "続きを読む", post_path(post[:filename]), class: "btn"
