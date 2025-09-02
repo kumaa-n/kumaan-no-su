@@ -1,0 +1,15 @@
+- content_for(:title, @front_matter[:title])
+
+main.flex-1.px-5.py-10.md:px-8
+  .mx-auto.mb-10.max-w-3xl
+    .bg-base-100.border-base-300.rounded-2xl.border.p-10.shadow-sm
+      .mb-6.border-b.pb-6
+        h1.text-base-content.mb-2.text-3xl.leading-tight.font-bold.md:text-4xl
+          = @front_matter[:title]
+        .mt-3.flex.items-center.gap-2
+          = inline_svg_tag("calendar.svg", class: "fill-current")
+          time datetime=@front_matter[:date]
+            = @front_matter[:date_hyphen]
+
+      article.prose.max-w-none
+        == @content_html
