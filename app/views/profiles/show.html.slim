@@ -1,0 +1,43 @@
+- content_for(:title, t('.title'))
+
+main.flex-1.p-5.sm:p-8
+  .mx-auto.max-w-5xl.space-y-8
+    .card.card-border.bg-base-100
+      .card-body.flex.flex-col.items-start.gap-8.sm:flex-row.sm:items-center
+        .avatar.self-center
+          .w-60.rounded-full
+            = image_tag("ren.png")
+
+        .ml-4
+          h1.mb-4.text-3xl.font-bold くまーん
+          p.text-text/80.mb-6.leading-relaxed
+            | Web開発の知識を勉強中です！
+            br
+            | 前職は印刷業界で開発職みたいなことを行っており、
+            br
+            | PerlとごくまれにCOBOLを使用していました。
+
+          h2.mb-4.text-2xl.font-bold SNSリンク
+          .flex.gap-6
+            = link_to social_link(:github), target: "_blank" do
+              = inline_svg_tag("GitHub.svg", class: "fill-current")
+
+            = link_to social_link(:x), target: "_blank" do
+              = inline_svg_tag("X.svg", class: "fill-current")
+
+            = link_to social_link(:note), target: "_blank" do
+              / サイズを2倍している都合上、marginを付加
+              = inline_svg_tag("note.svg", class: "fill-current scale-200 ml-1.5")
+
+      .m-10
+        h2.mb-6.text-2xl.font-bold 作成したアプリ
+        .grid.grid-cols-1.gap-5.sm:grid-cols-2.lg:grid-cols-3
+          - apps.each do |app|
+            .card.bg-base-100.border-accent/30.w-full.rounded-lg.border.shadow-sm
+              .card-body
+                h2.card-title
+                  = app[:title]
+                p
+                  = app[:desc]
+                .card-actions.justify-end
+                  = link_to "アプリを見る", app[:url], class: "btn", target: "_blank"
