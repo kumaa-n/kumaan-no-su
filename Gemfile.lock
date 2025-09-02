@@ -1,3 +1,10 @@
+GIT
+  remote: https://github.com/slim-template/html2slim.git
+  revision: 4c3526d36c5bcc2de37a04603ee90c374bff3e99
+  specs:
+    html2slim (0.2.0)
+      nokogiri
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -271,6 +278,13 @@ GEM
       rexml (~> 3.2, >= 3.2.5)
       rubyzip (>= 1.2.2, < 4.0)
       websocket (~> 1.0)
+    slim (5.2.1)
+      temple (~> 0.10.0)
+      tilt (>= 2.1.0)
+    slim-rails (3.7.0)
+      actionpack (>= 3.1)
+      railties (>= 3.1)
+      slim (>= 3.0, < 6.0, != 5.0.0)
     sprockets (4.2.2)
       concurrent-ruby (~> 1.0)
       logger
@@ -292,7 +306,9 @@ GEM
     tailwindcss-ruby (4.1.12-x86_64-darwin)
     tailwindcss-ruby (4.1.12-x86_64-linux-gnu)
     tailwindcss-ruby (4.1.12-x86_64-linux-musl)
+    temple (0.10.4)
     thor (1.4.0)
+    tilt (2.6.1)
     timeout (0.4.3)
     turbo-rails (2.0.16)
       actionpack (>= 7.1.0)
@@ -335,6 +351,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   front_matter_parser
+  html2slim!
   inline_svg
   jbuilder
   jsbundling-rails
@@ -345,6 +362,7 @@ DEPENDENCIES
   rails-i18n
   rubocop-rails-omakase
   selenium-webdriver
+  slim-rails
   sprockets-rails
   stimulus-rails
   tailwindcss-rails
