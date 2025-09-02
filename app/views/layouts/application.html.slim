@@ -8,13 +8,13 @@ html
     = csrf_meta_tags
     = csp_meta_tag
     = yield :head
-    = favicon_link_tag 'bear.svg'
-    = favicon_link_tag 'bear.png', rel: 'apple-touch-icon', type: 'image/png'
+    = favicon_link_tag "bear.svg"
+    = favicon_link_tag "bear.png", rel: "apple-touch-icon", type: "image/png"
     = stylesheet_link_tag "tailwind", "data-turbo-track": "reload"
     = stylesheet_link_tag "application", "data-turbo-track": "reload"
     = javascript_include_tag "application", "data-turbo-track": "reload", type: "module"
 
   body.bg-base-200.flex.min-h-screen.flex-col
-    = render 'shared/header'
+    = render "shared/header"
     = yield
-    = render 'shared/footer'
+    = render "shared/footer"
