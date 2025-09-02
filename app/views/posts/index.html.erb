@@ -1,0 +1,22 @@
+<main class="flex-1 p-5 md:p-8">
+  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+    <% @posts.each do |post| %>
+      <%= post[:parsed] %>
+      <div class="card card-border bg-base-100 w-full">
+        <div class="card-body">
+          <h2 class="card-title border-b pb-1"><%= post[:title] %></h2>
+          <p><%= post[:summary] %></p>
+
+          <div class="flex items-center gap-2 mt-2">
+            <%= inline_svg_tag("calendar.svg", class: "fill-current") %>
+            <time dateTime="<%= post[:date] %>"><%= post[:date_hyphen] %></time>
+          </div>
+
+          <div class="card-actions justify-end">
+            <%= link_to "続きを読む", post_path(post[:filename]), class: "btn" %>
+          </div>
+        </div>
+      </div>
+    <% end %>
+  </div>
+</main>

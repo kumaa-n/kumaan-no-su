@@ -1,0 +1,20 @@
+<% content_for(:title, @front_matter[:title]) %>
+<main class="flex-1 px-5 md:px-8 py-10">
+  <div class="max-w-3xl mx-auto mb-10">
+    <div class="bg-base-100 rounded-2xl shadow-sm p-10 border border-base-300">
+      <div class="mb-6 border-b pb-6">
+        <h1 class="text-3xl md:text-4xl font-bold text-base-content leading-tight mb-2">
+          <%= @front_matter[:title] %>
+        </h1>
+        <div class="flex items-center gap-2 mt-3">
+          <%= inline_svg_tag("calendar.svg", class: "fill-current") %>
+          <time dateTime="<%= @front_matter[:date] %>"><%= @front_matter[:date_hyphen] %></time>
+        </div>
+      </div>
+
+      <article class="prose max-w-none">
+        <%= raw @content_html %>
+      </article>
+    </div>
+  </div>
+</main>

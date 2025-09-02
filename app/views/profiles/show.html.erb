@@ -1,0 +1,56 @@
+<% content_for(:title, t('.title')) %>
+<main class="flex-1 p-5 sm:p-8">
+  <div class="max-w-5xl mx-auto space-y-8">
+    <div class="card card-border bg-base-100">
+      <div class="card-body flex flex-col items-start sm:flex-row sm:items-center gap-8">
+        <div class="avatar self-center">
+          <div class="w-60 rounded-full">
+            <%= image_tag("ren.png") %>
+          </div>
+        </div>
+
+        <div class="ml-4">
+          <h1 class="text-3xl font-bold mb-4">くまーん</h1>
+          <p class="text-text/80 leading-relaxed mb-6">
+            Web開発の知識を勉強中です！<br>
+            前職は印刷業界で開発職みたいなことを行っており、<br>
+            PerlとごくまれにCOBOLを使用していました。
+          </p>
+
+          <h2 class="text-2xl font-bold mb-4">SNSリンク</h2>
+          <div class="flex gap-6">
+            <%= link_to social_link(:github), target: "_blank" do %>
+              <%= inline_svg_tag("GitHub.svg", class: "fill-current") %>
+            <% end %>
+
+            <%= link_to social_link(:x), target: "_blank" do %>
+              <%= inline_svg_tag("X.svg", class: "fill-current") %>
+            <% end %>
+
+            <%= link_to social_link(:note), target: "_blank" do %>
+              <!-- サイズを2倍している都合上、marginを付加 -->
+              <%= inline_svg_tag("note.svg", class: "fill-current scale-200 ml-1.5") %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+
+      <div class="m-10">
+        <h2 class="text-2xl font-bold mb-6">作成したアプリ</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          <% apps.each do |app| %>
+            <div class="card bg-base-100 w-full shadow-sm border border-accent/30 rounded-lg">
+              <div class="card-body">
+                <h2 class="card-title"><%= app[:title] %></h2>
+                <p><%= app[:desc] %></p>
+                <div class="card-actions justify-end">
+                  <%= link_to "アプリを見る", app[:url] , class: "btn", target: "_blank" %>
+                </div>
+              </div>
+            </div>
+          <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>

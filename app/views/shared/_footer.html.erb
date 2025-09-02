@@ -1,0 +1,20 @@
+<footer class="footer sm:footer-horizontal bg-neutral text-neutral-content items-center p-4">
+  <aside class="grid-flow-col items-center">
+    <%= inline_svg_tag("dog.svg", class: "fill-current") %>
+    くまーんの巣
+  </aside>
+
+  <nav class="grid-flow-col gap-6 sm:place-self-center sm:justify-self-end">
+    <%= link_to social_link(:github), target: "_blank" do %>
+      <%= inline_svg_tag("GitHub.svg", class: "fill-current") %>
+    <% end %>
+
+    <%= link_to social_link(:x), target: "_blank" do %>
+      <%= inline_svg_tag("X.svg", class: "fill-current") %>
+    <% end %>
+
+    <%= link_to social_link(:note), target: "_blank" do %>
+      <%= inline_svg_tag("note.svg", class: "fill-current scale-200") %>
+    <% end %>
+  </nav>
+</footer>
