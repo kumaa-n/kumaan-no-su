@@ -35,5 +35,15 @@ module MyBlog
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.generators do |g|
+      g.system_tests = nil
+      g.helper false
+      g.assets false
+      g.test_framework nil
+      g.skip_routes true
+    end
+
+    config.i18n.default_locale = :ja
   end
 end

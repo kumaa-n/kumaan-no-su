@@ -52,3 +52,11 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "tailwindcss-rails"
+gem "tailwindcss-ruby"
+gem "inline_svg"
+gem "rails-i18n"
+gem "front_matter_parser"
+gem "kramdown"
+gem "kramdown-parser-gfm"
