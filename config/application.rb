@@ -36,8 +36,8 @@ module MyBlog
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
 
+    config.generators.system_tests = nil
     config.generators do |g|
-      g.system_tests = nil
       g.helper false
       g.assets false
       g.test_framework nil
@@ -45,5 +45,6 @@ module MyBlog
     end
 
     config.i18n.default_locale = :ja
+    config.time_zone = "Tokyo"
   end
 end
