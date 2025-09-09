@@ -5,7 +5,6 @@ ja:
   profiles:
     show:
       title: プロフィール
-  views:
-    pagination:
-      previous: 前へ
-      next: 次へ
+  pagination:
+    previous: 前へ
+    next: 次へ
