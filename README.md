@@ -5,7 +5,7 @@
 
 ## 🌐 サイトURL
 
-https://shrill-eda-kumaa-n-68bfad52.koyeb.app
+https://kumaan-no-su.onrender.com
 
 ## 🛠 技術スタック
 
