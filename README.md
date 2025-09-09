@@ -11,5 +11,5 @@ https://shrill-eda-kumaa-n-68bfad52.koyeb.app
 
 - フロントエンド：Tailwind CSS, daisyUI
 - バックエンド：Ruby on Rails 7
-- インフラ：Docker, Koyeb（デプロイ）
+- インフラ：Docker, Render（デプロイ）
 - データベース：未使用
