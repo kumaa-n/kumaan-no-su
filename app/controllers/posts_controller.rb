@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = PostLoader.all.map(&:info)
+    @posts = Kaminari.paginate_array(PostLoader.all.map(&:info)).page(params[:page])
   end
 
   def show
