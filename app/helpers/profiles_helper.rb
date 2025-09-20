@@ -15,7 +15,7 @@ module ProfilesHelper
         title: "秋フレーズジェネレーター",
         desc: "秋の季節を感じられるフレーズをランダムに生成するWebアプリケーションです。",
         url: "https://autumn-phrase-generator.vercel.app"
-      },
+      }
     ]
   end
 end
