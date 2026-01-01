@@ -115,6 +115,7 @@ GEM
     front_matter_parser (1.0.1)
     globalid (1.2.1)
       activesupport (>= 6.1)
+    high_voltage (5.0.0)
     i18n (1.14.7)
       concurrent-ruby (~> 1.0)
     inline_svg (1.10.0)
@@ -357,6 +358,7 @@ DEPENDENCIES
   cssbundling-rails
   debug
   front_matter_parser
+  high_voltage
   html2slim!
   inline_svg
   jbuilder
