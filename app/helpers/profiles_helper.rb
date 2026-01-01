@@ -4,7 +4,7 @@ module ProfilesHelper
       {
         title: "クラギごころ",
         desc: "クラギごころはクラシックギター楽曲の難易度評価・演奏技術分析でギタリストの曲選びと練習をサポートするWebサービスです。テンポ、運指、表現力など詳細評価を共有できます。",
-        url: "https://clagi-gokoro.onrender.com"
+        url: "https://clagi-gokoro.com"
       },
       {
         title: "pdf_tool",

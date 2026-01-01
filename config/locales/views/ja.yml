@@ -2,8 +2,8 @@ ja:
   header:
     home: ホーム
     profile: プロフィール
-  profiles:
-    show:
+  pages:
+    profile:
       title: プロフィール
   pagination:
     previous: 前へ
